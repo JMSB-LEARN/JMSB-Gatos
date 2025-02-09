@@ -1,0 +1,81 @@
+#contenedorImaganes {
+    margin: 3vw;
+    justify-content: space-around;
+    display: flex;
+    row-gap: 3vh;
+    column-gap: 3vw;
+}
+
+.contenedorImagen img {
+    height: auto;
+    width: 100%;
+}
+
+#contenedorImaganes>div {
+    flex-basis: 45%;
+}
+
+.botonera {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    display: none;
+    column-gap: 1vw;
+    row-gap: 1vh;
+    flex-wrap: wrap;
+}
+
+.botonera button {
+    width: 22%;
+}
+
+@media (max-width: 1700px) and (min-width: 1401px) {
+    #contenedorImaganes>div {
+        flex-basis: 50%;
+    }
+}
+
+@media (max-width: 1400px) and (min-width: 901px) {
+    #contenedorImaganes>div {
+        flex-basis: 60%;
+    }
+}
+
+@media (max-width: 900px) and (min-width: 701px) {
+    #contenedorImaganes>div {
+        flex-basis: 70%;
+    }
+}
+
+@media (max-width: 900px) {
+    #contenedorImaganes {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 700px) and (min-width: 511px) {
+    #contenedorImaganes>div {
+        flex-basis: 80%;
+    }
+}
+
+@media (max-width: 510px) {
+    .botonera>button {
+        flex-basis: 30%;
+    }
+
+    #contenedorImaganes>div {
+        flex-basis: 90%;
+    }
+}
+
+@media (max-width: 320px) {
+    .botonera>button {
+        flex-basis: 40%;
+        font-size: 50%;
+    }
+
+    #contenedorImaganes>div {
+        flex-basis: 90%;
+    }
+}
